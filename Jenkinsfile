@@ -21,8 +21,9 @@ pipeline{
 }
          stage('BuildWithGradle'){
               steps{
-                 sh "gradle -v"
+                 echo "hello"
 }
+ 
        
 }
 }
