@@ -16,7 +16,7 @@ pipeline{
 }
          stage('clone'){
              steps{
-                checkout ([$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[url: 'https://github.com/Aliabbask08/gradle-project.git']]])
+                checkout ([$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[url: 'https://github.com/Aliabbask08/testct.git']]])
 }
 }
          stage('BuildWithGradle'){
