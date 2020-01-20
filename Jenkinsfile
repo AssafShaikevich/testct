@@ -22,6 +22,8 @@ pipeline{
          stage('BuildWithGradle'){
               steps{
                  echo "hello"
+                 sh "pwd"
+                 sh "gradle -v"
 }
  
        
