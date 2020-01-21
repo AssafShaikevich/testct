@@ -24,9 +24,9 @@ pipeline{
                  echo "hello"
                  sh "pwd"
                  sh "gradle -v"
+                 sh "gradle clean build"
 }
  
-       
-}
+             }
 }
 }
