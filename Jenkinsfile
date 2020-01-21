@@ -26,9 +26,8 @@ pipeline{
                  sh "gradle -v"
                  sh "gradle clean build"
 }
- 
 }
-          stage("Buildstarted"){
+         stage("Buildstarted"){
             steps{
                 slackSend channel: '#jenkins_build',
                     color: 'bad',
