@@ -27,6 +27,14 @@ pipeline{
                  sh "gradle clean build"
 }
  
-             }
+}
+          stage("Buildstarted"){
+            steps{
+                slackSend channel: '#jenkins_build',
+                    color: 'bad',
+                    message: "* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL} is Completed"
+            }
+        }
+
 }
 }
